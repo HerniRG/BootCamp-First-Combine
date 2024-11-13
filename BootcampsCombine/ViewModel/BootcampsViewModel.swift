@@ -12,7 +12,7 @@ final class BootcampsViewModel: ObservableObject {
         cargarBootcamps()
     }
     
-    func cargarBootcamps(useMockData: Bool = true) {
+    func cargarBootcamps(useMockData: Bool = false) {
         self.estado = .loading
         if useMockData {
             // Retraso de 2 segundos solo para los datos mock
